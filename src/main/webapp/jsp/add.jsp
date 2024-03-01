@@ -11,7 +11,7 @@
     <%
         User user = (User) request.getAttribute("user");
         if (user != null) {
-            out.println("<p>User '" + user.getFirstName() + " " + user.getLastName() + "' added!</p>");
+            System.out.println("<p>User '" + user.getFirstName() + " " + user.getLastName() + "' added!</p>");
         }
     %>
     <h3 class="title w3-text-black">

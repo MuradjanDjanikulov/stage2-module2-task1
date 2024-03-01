@@ -13,12 +13,12 @@
         <%
             Set<User> users = (Set<User>) request.getAttribute("users");
             if (users != null && !users.isEmpty()) {
-                out.println("<ol>");
+                System.out.println("<ol>");
                 for (User user : users) {
-                    out.println("<li>" + user.getFirstName() + " " + user.getLastName() + "</li>");
+                    System.out.println("<li>" + user.getFirstName() + " " + user.getLastName() + "</li>");
                 }
-                out.println("</ol>");
-            } else out.println("<p>There are no users yet!</p>");
+                System.out.println("</ol>");
+            } else System.out.println("<p>There are no users yet!</p>");
         %>
         <br>
         <div>
